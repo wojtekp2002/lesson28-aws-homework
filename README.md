@@ -1,6 +1,6 @@
 # Lesson 28 - AWS homework
 
-Repozytorium zawiera wykonane zadania z lekcji 28 AWS. Opis jest napisany krotko i konkretnie, tak zeby bylo jasne co zostalo zrobione i gdzie sa dowody.
+Repozytorium zawiera wykonane zadania z lekcji 28 AWS.
 
 ## Zadanie 1 - srodowisko AWS
 
@@ -66,20 +66,9 @@ Najwazniejsze pliki:
 
 ## Bezpieczenstwo
 
-Do repozytorium nie dodalem zadnych sekretow AWS, access key ani secret key. Bucket S3 ma wlaczone:
+Do repozytorium nie dodano zadnych sekretow AWS, access key ani secret key. Bucket S3 ma wlaczone:
 
 - blokade publicznego dostepu
 - szyfrowanie SSE-S3
 - tagi projektu
 
-## Co oddac
-
-Najlepiej oddac link do tego repozytorium oraz ewentualnie screeny opisane w `docs/submission-checklist.md`.
-
-## Sprzatanie po zaliczeniu
-
-Po sprawdzeniu zadania usun zasoby wedlug instrukcji:
-
-```text
-docs/cleanup.md
-```
