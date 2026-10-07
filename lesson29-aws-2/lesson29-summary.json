@@ -1,0 +1,15 @@
+﻿{
+    "Subnet1Id":  "subnet-06a67a2974b0567a7",
+    "RdsIdentifier":  "lesson29-postgres-20261007",
+    "S3Bucket":  "lesson29-static-site-660140202510-20261007",
+    "Ec2InstanceId":  "i-063c26d7e89f6e6c9",
+    "RdsSecurityGroupId":  "sg-09b8de5e4321c4b76",
+    "Ec2SecurityGroupId":  "sg-0cf71218657bf066c",
+    "WebsiteUrl":  "http://lesson29-static-site-660140202510-20261007.s3-website.eu-central-1.amazonaws.com",
+    "VpcId":  "vpc-0eb32900767e3658b",
+    "AccountId":  "660140202510",
+    "Region":  "eu-central-1",
+    "RdsEndpoint":  "lesson29-postgres-20261007.crqsuq4wek4x.eu-central-1.rds.amazonaws.com",
+    "Subnet2Id":  "subnet-0253b2a064bb09d03",
+    "CallerArn":  "arn:aws:iam::660140202510:user/devops-admin"
+}

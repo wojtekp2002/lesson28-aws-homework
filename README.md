@@ -1,57 +1,34 @@
-# Lesson 28 - AWS homework
+# AWS homework - lekcje 28 i 29
 
-Repozytorium zawiera wykonane zadania z lekcji 28 AWS.
+Repozytorium zawiera wykonane zadania z lekcji 28 i 29 AWS. Trzymam je razem, bo oba zadania dotyczą tej samej części kursu i łatwiej oddać jeden link niż kilka małych repozytoriów.
 
-## Zadanie 1 - srodowisko AWS
+## Lekcja 28 - podstawy AWS i AWS CLI
 
-Zrobione:
+W lekcji 28 wykonałem:
 
-- utworzone grupy IAM:
+- utworzenie grup IAM:
   - `lesson28-admins`
   - `lesson28-developers`
   - `lesson28-readonly`
-- utworzeni uzytkownicy IAM:
+- utworzenie użytkowników IAM:
   - `lesson28.admin`
   - `lesson28.developer`
   - `lesson28.readonly`
-- uzytkownicy zostali przypisani do odpowiednich grup
-- utworzony budzet:
-  - `lesson28-free-tier-safety-budget`
-  - limit: `5 USD`
-  - status: `HEALTHY`
-- dodany alert email:
-  - `wojtek.pasiu@gmail.com`
-- AWS CLI dziala na uzytkowniku:
-  - `arn:aws:iam::660140202510:user/devops-admin`
+- przypisanie użytkowników do odpowiednich grup,
+- utworzenie budżetu `lesson28-free-tier-safety-budget` z limitem `5 USD`,
+- dodanie alertu e-mail dla budżetu,
+- sprawdzenie działania AWS CLI na użytkowniku `devops-admin`,
+- utworzenie bucketa S3 `lesson28-aws-homework-660140202510-20261007`,
+- upload i download pliku testowego,
+- listowanie bucketów S3, AMI Amazon Linux 2, security groups, użytkowników IAM i budżetu.
 
-## Zadanie 2 - AWS CLI
-
-Zrobione:
-
-- utworzony bucket S3:
-  - `lesson28-aws-homework-660140202510-20261007`
-- wrzucony plik:
-  - `sample-file/testfile.txt`
-- pobrany plik:
-  - `downloaded/testfile.txt`
-- wylistowane buckety S3
-- wylistowana zawartosc bucketa
-- wylistowane AMI Amazon Linux 2
-- wylistowane security groups
-- wylistowani uzytkownicy IAM
-- sprawdzone szczegoly uzytkownikow z zadania
-- sprawdzony budzet
-- sprawdzone szyfrowanie i public access block dla S3
-
-## Dowody wykonania
-
-Wyniki komend sa w katalogu:
+Dowody dla lekcji 28 są w katalogu:
 
 ```text
 aws-cli-output/
 ```
 
-Najwazniejsze pliki:
+Najważniejsze pliki:
 
 - `aws-cli-output/00-caller-identity.json`
 - `aws-cli-output/01-s3-buckets.txt`
@@ -64,11 +41,61 @@ Najwazniejsze pliki:
 - `aws-cli-output/14-s3-public-access-block.json`
 - `downloaded/testfile.txt`
 
-## Bezpieczenstwo
+## Lekcja 29 - EC2, RDS PostgreSQL i strona na S3
 
-Do repozytorium nie dodano zadnych sekretow AWS, access key ani secret key. Bucket S3 ma wlaczone:
+Zadanie z lekcji 29 jest dodane jako osobny katalog:
 
-- blokade publicznego dostepu
-- szyfrowanie SSE-S3
-- tagi projektu
+```text
+lesson29-aws-2/
+```
 
+W lekcji 29 wykonałem:
+
+- utworzenie VPC `lesson29-vpc`,
+- utworzenie dwóch subnetów w regionie `eu-central-1`,
+- utworzenie security groups dla EC2 i RDS,
+- otwarcie PostgreSQL tylko na porcie `5432` z EC2 do RDS,
+- utworzenie instancji RDS PostgreSQL `lesson29-postgres-20261007`,
+- utworzenie instancji EC2 `i-063c26d7e89f6e6c9`,
+- uruchomienie inicjalizacji bazy z EC2 przez SSM,
+- utworzenie tabeli `course_progress` i pierwszego wpisu w bazie PostgreSQL,
+- utworzenie strony statycznej na S3.
+
+Adres strony z lekcji 29:
+
+```text
+http://lesson29-static-site-660140202510-20261007.s3-website.eu-central-1.amazonaws.com
+```
+
+Dowody dla lekcji 29 są w:
+
+```text
+lesson29-aws-2/aws-cli-output/
+lesson29-aws-2/docs/
+lesson29-aws-2/site/
+lesson29-aws-2/lesson29-summary.json
+```
+
+## Bezpieczeństwo
+
+Do repozytorium nie dodano sekretów AWS, access key, secret key ani hasła do bazy RDS. W plikach wynikowych hasło do PostgreSQL zostało zamaskowane.
+
+## Co oddać
+
+Do oddania wystarczy link do repozytorium. Jeśli prowadzący chce screeny, można zrobić je z miejsc opisanych w:
+
+```text
+docs/submission-checklist.md
+lesson29-aws-2/docs/submission-checklist.md
+```
+
+## Sprzątanie po zaliczeniu
+
+Po sprawdzeniu zadania trzeba usunąć zasoby, szczególnie EC2 i RDS, bo mogą generować koszty.
+
+Instrukcje są tutaj:
+
+```text
+docs/cleanup.md
+lesson29-aws-2/docs/cleanup.md
+```

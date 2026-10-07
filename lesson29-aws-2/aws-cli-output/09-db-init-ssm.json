@@ -1,0 +1,23 @@
+{
+    "CommandId": "ec54174d-96ea-4024-baa2-c7e4e2224e10",
+    "InstanceId": "i-063c26d7e89f6e6c9",
+    "Comment": "",
+    "DocumentName": "AWS-RunShellScript",
+    "DocumentVersion": "$DEFAULT",
+    "PluginName": "aws:runShellScript",
+    "ResponseCode": 0,
+    "ExecutionStartDateTime": "2026-10-07T15:41:59.353Z",
+    "ExecutionElapsedTime": "PT3.303S",
+    "ExecutionEndDateTime": "2026-10-07T15:42:02.353Z",
+    "Status": "Success",
+    "StatusDetails": "Success",
+    "StandardOutputContent": "Last metadata expiration check: 0:06:17 ago on Wed Oct  7 15:35:43 2026.\nPackage postgresql15-15.19-1.amzn2023.0.1.x86_64 is already installed.\nDependencies resolved.\nNothing to do.\nComplete!\nCREATE TABLE\nINSERT 0 1\n id |                      note                       \n----+-------------------------------------------------\n  1 | lesson 29 postgres initialized from ec2 via ssm\n(1 row)\n\n",
+    "StandardOutputUrl": "",
+    "StandardErrorContent": "++ sudo dnf install -y postgresql15\n++ export 'PGPASSWORD=***'\n++ PGPASSWORD='***'\n++ psql -h lesson29-postgres-20261007.crqsuq4wek4x.eu-central-1.rds.amazonaws.com -U postgres -d lesson29db -c 'CREATE TABLE IF NOT EXISTS course_progress (id SERIAL PRIMARY KEY, note TEXT NOT NULL, created_at TIMESTAMP DEFAULT now());'\n++ psql -h lesson29-postgres-20261007.crqsuq4wek4x.eu-central-1.rds.amazonaws.com -U postgres -d lesson29db -c 'INSERT INTO course_progress (note) VALUES ('\\''lesson 29 postgres initialized from ec2 via ssm'\\'');'\n++ psql -h lesson29-postgres-20261007.crqsuq4wek4x.eu-central-1.rds.amazonaws.com -U postgres -d lesson29db -c 'SELECT id, note FROM course_progress ORDER BY id DESC LIMIT 5;'\n",
+    "StandardErrorUrl": "",
+    "CloudWatchOutputConfig": {
+        "CloudWatchLogGroupName": "",
+        "CloudWatchOutputEnabled": false
+    }
+}
+
