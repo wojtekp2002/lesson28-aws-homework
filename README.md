@@ -51,3 +51,6 @@ aws budgets delete-budget --account-id 660140202510 --budget-name lesson28-free-
 `
 
 UĹĽytkownikĂłw i grupy IAM usuĹ„ dopiero po upewnieniu siÄ™, ĹĽe nie sÄ… juĹĽ potrzebne.
+
+Budget verification: aws-cli-output/09-budget.json
+
