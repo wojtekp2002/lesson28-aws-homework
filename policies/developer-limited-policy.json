@@ -1,0 +1,25 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DeveloperCommonReadWrite",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:Describe*",
+        "s3:*",
+        "cloudwatch:Get*",
+        "cloudwatch:List*",
+        "cloudwatch:Describe*",
+        "logs:Describe*",
+        "logs:Get*",
+        "logs:List*",
+        "iam:GetUser",
+        "iam:ListUsers",
+        "iam:ListGroups",
+        "iam:ListGroupsForUser",
+        "iam:ListAttachedGroupPolicies"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

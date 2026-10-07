@@ -1,0 +1,9 @@
+﻿{
+    "BudgetLimit":  {
+                        "Unit":  "USD",
+                        "Amount":  "5"
+                    },
+    "TimeUnit":  "MONTHLY",
+    "BudgetType":  "COST",
+    "BudgetName":  "lesson28-free-tier-safety-budget"
+}

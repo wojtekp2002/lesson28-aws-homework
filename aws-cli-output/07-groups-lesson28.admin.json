@@ -1,0 +1,11 @@
+﻿{
+    "Groups": [
+        {
+            "Path": "/",
+            "GroupName": "lesson28-admins",
+            "GroupId": "AGPAZTM3MDIHLVJ2RHE5O",
+            "Arn": "arn:aws:iam::660140202510:group/lesson28-admins",
+            "CreateDate": "2026-10-07T14:28:04+00:00"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+﻿{
+    "User": {
+        "Path": "/",
+        "UserName": "lesson28.developer",
+        "UserId": "AIDAZTM3MDIHAV56OH7EG",
+        "Arn": "arn:aws:iam::660140202510:user/lesson28.developer",
+        "CreateDate": "2026-10-07T14:28:23+00:00",
+        "Tags": [
+            {
+                "Key": "Project",
+                "Value": "lesson28-aws-homework"
+            }
+        ]
+    }
+}

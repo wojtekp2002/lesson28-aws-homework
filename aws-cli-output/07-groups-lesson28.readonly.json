@@ -1,0 +1,11 @@
+﻿{
+    "Groups": [
+        {
+            "Path": "/",
+            "GroupName": "lesson28-readonly",
+            "GroupId": "AGPAZTM3MDIHAB7OY35NV",
+            "Arn": "arn:aws:iam::660140202510:group/lesson28-readonly",
+            "CreateDate": "2026-10-07T14:28:10+00:00"
+        }
+    ]
+}

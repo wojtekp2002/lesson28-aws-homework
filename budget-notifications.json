@@ -1,0 +1,14 @@
+﻿{
+    "Subscribers":  [
+                        {
+                            "SubscriptionType":  "EMAIL",
+                            "Address":  "wojtek.pasiu@gmail.com"
+                        }
+                    ],
+    "Notification":  {
+                         "NotificationType":  "ACTUAL",
+                         "ComparisonOperator":  "GREATER_THAN",
+                         "ThresholdType":  "PERCENTAGE",
+                         "Threshold":  80
+                     }
+}
