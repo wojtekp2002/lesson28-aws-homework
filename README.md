@@ -1,56 +1,85 @@
-﻿# Lesson 28 - AWS Homework
+# Lesson 28 - AWS homework
 
-Repozytorium dokumentuje wykonanie zadaĹ„ z lekcji 28 AWS.
+Repozytorium zawiera wykonane zadania z lekcji 28 AWS. Opis jest napisany krotko i konkretnie, tak zeby bylo jasne co zostalo zrobione i gdzie sa dowody.
 
-## Zadanie 1: kompleksowe Ĺ›rodowisko AWS
+## Zadanie 1 - srodowisko AWS
 
-Wykonano:
+Zrobione:
 
-- utworzenie grup IAM:
-  - $GroupAdmin,
-  - $GroupDeveloper,
-  - $GroupReadonly;
-- utworzenie uĹĽytkownikĂłw IAM:
-  - $UserAdmin,
-  - $UserDeveloper,
-  - $UserReadonly;
-- przypisanie uĹĽytkownikĂłw do grup;
-- skonfigurowanie budĹĽetu $BudgetName na 5 USD miesiÄ™cznie;
-- dodanie alertu email na adres: $AlertEmail;
-- potwierdzenie dziaĹ‚ajÄ…cego AWS CLI dla uĹĽytkownika devops-admin.
+- utworzone grupy IAM:
+  - `lesson28-admins`
+  - `lesson28-developers`
+  - `lesson28-readonly`
+- utworzeni uzytkownicy IAM:
+  - `lesson28.admin`
+  - `lesson28.developer`
+  - `lesson28.readonly`
+- uzytkownicy zostali przypisani do odpowiednich grup
+- utworzony budzet:
+  - `lesson28-free-tier-safety-budget`
+  - limit: `5 USD`
+  - status: `HEALTHY`
+- dodany alert email:
+  - `wojtek.pasiu@gmail.com`
+- AWS CLI dziala na uzytkowniku:
+  - `arn:aws:iam::660140202510:user/devops-admin`
 
-## Zadanie 2: AWS CLI
+## Zadanie 2 - AWS CLI
 
-Wykonano:
+Zrobione:
 
-- utworzenie bucketa S3: $BucketName;
-- upload pliku sample-file/testfile.txt;
-- pobranie pliku do downloaded/testfile.txt;
-- listowanie bucketĂłw S3;
-- listowanie zawartoĹ›ci bucketa;
-- listowanie AMI Amazon Linux 2;
-- listowanie security groups;
-- listowanie uĹĽytkownikĂłw IAM i szczegĂłĹ‚Ăłw uĹĽytkownikĂłw z zadania;
-- listowanie przykĹ‚adowej usĹ‚ugi AWS przez CloudWatch alarms.
+- utworzony bucket S3:
+  - `lesson28-aws-homework-660140202510-20261007`
+- wrzucony plik:
+  - `sample-file/testfile.txt`
+- pobrany plik:
+  - `downloaded/testfile.txt`
+- wylistowane buckety S3
+- wylistowana zawartosc bucketa
+- wylistowane AMI Amazon Linux 2
+- wylistowane security groups
+- wylistowani uzytkownicy IAM
+- sprawdzone szczegoly uzytkownikow z zadania
+- sprawdzony budzet
+- sprawdzone szyfrowanie i public access block dla S3
 
 ## Dowody wykonania
 
-Wyniki komend sÄ… zapisane w katalogu ws-cli-output/.
+Wyniki komend sa w katalogu:
 
-## BezpieczeĹ„stwo
+```text
+aws-cli-output/
+```
 
-Do repozytorium nie dodano ĹĽadnych sekretĂłw AWS, access key ani secret key.
-Bucket S3 ma wĹ‚Ä…czony blok publicznego dostÄ™pu, szyfrowanie SSE-S3 i tagi projektu.
+Najwazniejsze pliki:
 
-## SprzÄ…tanie po zaliczeniu
+- `aws-cli-output/00-caller-identity.json`
+- `aws-cli-output/01-s3-buckets.txt`
+- `aws-cli-output/02-s3-bucket-contents.txt`
+- `aws-cli-output/03-amazon-linux-2-amis.txt`
+- `aws-cli-output/04-security-groups.txt`
+- `aws-cli-output/05-iam-users.json`
+- `aws-cli-output/09-budget.json`
+- `aws-cli-output/13-s3-encryption.json`
+- `aws-cli-output/14-s3-public-access-block.json`
+- `downloaded/testfile.txt`
 
-`powershell
-aws s3 rm s3://lesson28-aws-homework-660140202510-20261007 --recursive
-aws s3api delete-bucket --bucket lesson28-aws-homework-660140202510-20261007
-aws budgets delete-budget --account-id 660140202510 --budget-name lesson28-free-tier-safety-budget
-`
+## Bezpieczenstwo
 
-UĹĽytkownikĂłw i grupy IAM usuĹ„ dopiero po upewnieniu siÄ™, ĹĽe nie sÄ… juĹĽ potrzebne.
+Do repozytorium nie dodalem zadnych sekretow AWS, access key ani secret key. Bucket S3 ma wlaczone:
 
-Budget verification: aws-cli-output/09-budget.json
+- blokade publicznego dostepu
+- szyfrowanie SSE-S3
+- tagi projektu
 
+## Co oddac
+
+Najlepiej oddac link do tego repozytorium oraz ewentualnie screeny opisane w `docs/submission-checklist.md`.
+
+## Sprzatanie po zaliczeniu
+
+Po sprawdzeniu zadania usun zasoby wedlug instrukcji:
+
+```text
+docs/cleanup.md
+```
