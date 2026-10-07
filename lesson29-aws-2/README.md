@@ -1,7 +1,5 @@
 # Lekcja 29 - AWS EC2, RDS PostgreSQL i S3
 
-Ten katalog zawiera wykonanie zadań z lekcji 29. Dodałem go do repozytorium z lekcji 28, bo oba tematy dotyczą AWS i tak jest prościej oddać całość jednym linkiem.
-
 ## Zadanie 1 - EC2 + RDS PostgreSQL
 
 Zrobione:
@@ -56,6 +54,3 @@ Najważniejsze pliki:
 - `aws-cli-output/09-db-init-ssm.json`
 - `lesson29-summary.json`
 
-## Uwaga o kosztach
-
-RDS i EC2 to realne zasoby AWS. Po zaliczeniu zadania trzeba je usunąć według instrukcji z `docs/cleanup.md`.
