@@ -80,22 +80,3 @@ lesson29-aws-2/lesson29-summary.json
 
 Do repozytorium nie dodano sekretów AWS, access key, secret key ani hasła do bazy RDS. W plikach wynikowych hasło do PostgreSQL zostało zamaskowane.
 
-## Co oddać
-
-Do oddania wystarczy link do repozytorium. Jeśli prowadzący chce screeny, można zrobić je z miejsc opisanych w:
-
-```text
-docs/submission-checklist.md
-lesson29-aws-2/docs/submission-checklist.md
-```
-
-## Sprzątanie po zaliczeniu
-
-Po sprawdzeniu zadania trzeba usunąć zasoby, szczególnie EC2 i RDS, bo mogą generować koszty.
-
-Instrukcje są tutaj:
-
-```text
-docs/cleanup.md
-lesson29-aws-2/docs/cleanup.md
-```
