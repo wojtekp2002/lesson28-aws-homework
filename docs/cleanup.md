@@ -14,9 +14,6 @@ aws budgets delete-budget --account-id 660140202510 --budget-name lesson28-free-
 ```
 
 ## IAM
-
-IAM usuwaj ostroznie. Najpierw odepnij uzytkownikow od grup, potem polityki od grup, a dopiero na koncu usun grupy i uzytkownikow.
-
 Utworzone elementy:
 
 - grupy:
