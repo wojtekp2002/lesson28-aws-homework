@@ -1,7 +1,5 @@
 # Cleanup
 
-Po zaliczeniu zadania warto usunac zasoby, zeby nic nie zostalo w AWS bez potrzeby.
-
 ## S3
 
 ```powershell
