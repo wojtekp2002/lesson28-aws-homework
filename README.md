@@ -1,6 +1,6 @@
-# AWS homework - lekcje 28 i 29
+# AWS homework - lekcje 28, 29 i 30
 
-Repozytorium zawiera wykonane zadania z lekcji 28 i 29 AWS. Trzymam je razem, bo oba zadania dotyczą tej samej części kursu i łatwiej oddać jeden link niż kilka małych repozytoriów.
+Repozytorium zawiera wykonane zadania z lekcji 28, 29 i 30 AWS. Trzymam je razem, bo zadania dotyczą tej samej części kursu i łatwiej oddać jeden link niż kilka małych repozytoriów.
 
 ## Lekcja 28 - podstawy AWS i AWS CLI
 
@@ -76,7 +76,60 @@ lesson29-aws-2/site/
 lesson29-aws-2/lesson29-summary.json
 ```
 
+## Lekcja 30 - Lambda, ECR i ECS Fargate
+
+Zadanie z lekcji 30 jest dodane jako osobny katalog:
+
+```text
+lesson30-aws-3/
+```
+
+W lekcji 30 wykonałem:
+
+- utworzenie bucketa S3 `lesson30-serverless-660140202510-20261008`,
+- utworzenie funkcji Lambda `lesson30-s3-time-function`,
+- wystawienie Function URL,
+- zwracanie aktualnego czasu UTC i listy plików z bucketa S3,
+- przygotowanie własnego obrazu Docker z prostym serwerem Node.js,
+- utworzenie repozytorium ECR `lesson30-fargate-app`,
+- zbudowanie obrazu przez CodeBuild i wypchnięcie go do ECR,
+- utworzenie klastra ECS `lesson30-fargate-cluster`,
+- uruchomienie taska Fargate z obrazem z ECR,
+- sprawdzenie odpowiedzi HTTP aplikacji kontenerowej,
+- zatrzymanie taska Fargate po weryfikacji, żeby ograniczyć koszty.
+
+Dowody dla lekcji 30 są w:
+
+```text
+lesson30-aws-3/aws-cli-output/
+lesson30-aws-3/docs/
+lesson30-aws-3/container-app/
+lesson30-aws-3/lambda/
+lesson30-aws-3/lesson30-summary.json
+```
+
 ## Bezpieczeństwo
 
 Do repozytorium nie dodano sekretów AWS, access key, secret key ani hasła do bazy RDS. W plikach wynikowych hasło do PostgreSQL zostało zamaskowane.
 
+## Co oddać
+
+Do oddania wystarczy link do repozytorium. Jeśli prowadzący chce screeny, można zrobić je z miejsc opisanych w:
+
+```text
+docs/submission-checklist.md
+lesson29-aws-2/docs/submission-checklist.md
+lesson30-aws-3/docs/submission-checklist.md
+```
+
+## Sprzątanie po zaliczeniu
+
+Po sprawdzeniu zadania trzeba usunąć zasoby, szczególnie EC2, RDS, ECR, CodeBuild, Lambda i pozostałe elementy AWS, bo mogą generować koszty.
+
+Instrukcje są tutaj:
+
+```text
+docs/cleanup.md
+lesson29-aws-2/docs/cleanup.md
+lesson30-aws-3/docs/cleanup.md
+```

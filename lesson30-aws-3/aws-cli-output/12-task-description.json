@@ -1,0 +1,98 @@
+﻿{
+    "tasks": [
+        {
+            "attachments": [
+                {
+                    "id": "51b72e24-c641-48a0-a49f-f4fd6d7bee05",
+                    "type": "ElasticNetworkInterface",
+                    "status": "ATTACHED",
+                    "details": [
+                        {
+                            "name": "subnetId",
+                            "value": "subnet-0b3ffeffd359f0884"
+                        },
+                        {
+                            "name": "networkInterfaceId",
+                            "value": "eni-0563181defb45cbf1"
+                        },
+                        {
+                            "name": "macAddress",
+                            "value": "02:ff:ca:5b:41:ed"
+                        },
+                        {
+                            "name": "privateDnsName",
+                            "value": "ip-172-31-25-21.eu-central-1.compute.internal"
+                        },
+                        {
+                            "name": "privateIPv4Address",
+                            "value": "172.31.25.21"
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                {
+                    "name": "ecs.cpu-architecture",
+                    "value": "x86_64"
+                }
+            ],
+            "availabilityZone": "eu-central-1a",
+            "clusterArn": "arn:aws:ecs:eu-central-1:660140202510:cluster/lesson30-fargate-cluster",
+            "connectivity": "CONNECTED",
+            "connectivityAt": "2026-10-08T20:59:23.263000+02:00",
+            "containers": [
+                {
+                    "containerArn": "arn:aws:ecs:eu-central-1:660140202510:container/lesson30-fargate-cluster/17ce392c6cee4116a34177b6a548a5b9/d321072c-d8ca-4994-a9a4-dcf07b8024a8",
+                    "taskArn": "arn:aws:ecs:eu-central-1:660140202510:task/lesson30-fargate-cluster/17ce392c6cee4116a34177b6a548a5b9",
+                    "name": "lesson30-app",
+                    "image": "660140202510.dkr.ecr.eu-central-1.amazonaws.com/lesson30-fargate-app:latest",
+                    "imageDigest": "sha256:ad901e81afd88018093561f3642d106ee3a44b4093ca80feb3dae4569ef59c10",
+                    "runtimeId": "17ce392c6cee4116a34177b6a548a5b9-2221167620",
+                    "lastStatus": "RUNNING",
+                    "networkBindings": [],
+                    "networkInterfaces": [
+                        {
+                            "attachmentId": "51b72e24-c641-48a0-a49f-f4fd6d7bee05",
+                            "privateIpv4Address": "172.31.25.21"
+                        }
+                    ],
+                    "healthStatus": "UNKNOWN",
+                    "cpu": "0"
+                }
+            ],
+            "cpu": "256",
+            "createdAt": "2026-10-08T20:59:18.765000+02:00",
+            "desiredStatus": "RUNNING",
+            "enableExecuteCommand": false,
+            "group": "family:lesson30-fargate-task",
+            "healthStatus": "UNKNOWN",
+            "lastStatus": "RUNNING",
+            "launchType": "FARGATE",
+            "memory": "512",
+            "overrides": {
+                "containerOverrides": [
+                    {
+                        "name": "lesson30-app"
+                    }
+                ],
+                "inferenceAcceleratorOverrides": []
+            },
+            "platformVersion": "1.4.0",
+            "platformFamily": "Linux",
+            "pullStartedAt": "2026-10-08T20:59:30.731000+02:00",
+            "pullStoppedAt": "2026-10-08T20:59:33.584000+02:00",
+            "startedAt": "2026-10-08T20:59:34.248000+02:00",
+            "tags": [],
+            "taskArn": "arn:aws:ecs:eu-central-1:660140202510:task/lesson30-fargate-cluster/17ce392c6cee4116a34177b6a548a5b9",
+            "taskDefinitionArn": "arn:aws:ecs:eu-central-1:660140202510:task-definition/lesson30-fargate-task:1",
+            "version": 3,
+            "ephemeralStorage": {
+                "sizeInGiB": 20
+            },
+            "fargateEphemeralStorage": {
+                "sizeInGiB": 20
+            }
+        }
+    ],
+    "failures": []
+}

@@ -1,0 +1,27 @@
+{
+    "events": [
+        {
+            "logStreamName": "ecs/lesson30-app/17ce392c6cee4116a34177b6a548a5b9",
+            "timestamp": 1791485976791,
+            "message": "> lesson30-fargate-app@1.0.0 start",
+            "ingestionTime": 1791485979040,
+            "eventId": "39951472295156836618805798949030424510314594995165986816"
+        },
+        {
+            "logStreamName": "ecs/lesson30-app/17ce392c6cee4116a34177b6a548a5b9",
+            "timestamp": 1791485976791,
+            "message": "> node server.js",
+            "ingestionTime": 1791485979040,
+            "eventId": "39951472295156836618805798949030424510314594995165986817"
+        },
+        {
+            "logStreamName": "ecs/lesson30-app/17ce392c6cee4116a34177b6a548a5b9",
+            "timestamp": 1791485977300,
+            "message": "lesson30 app listening on 8080",
+            "ingestionTime": 1791485979040,
+            "eventId": "39951472306507915924857886128072105111092611001710018562"
+        }
+    ],
+    "searchedLogStreams": [],
+    "nextToken": "Bxkq6kVGFtq2y_MoigeqscPOdhXVbhiVtLoAmXb5jCo4Zbk2uG68nLuGXPPj5asp38YWOvx1FjyYGyCqyt8NDv8xFZw7YfUtP825l9DjsJZBqOTkNbwWmketGTOWFcTQGpdxUb1doHDEMLBc_Sp4Kw-v91lbgZAq7ZwsiodpFePKXQxKlpopPVD0in0yzfucRKX9Id3Dn3hbPEpc1MQZV3oKZRDG3jq7zu2kmSLpOAmxDh_lcEIConTy_WKEIEfsx3mMxghlfhL20DhE7JKMdN2WpT2azMNp5po-nXSPcqO1bgoyKMOzEUohqLN6vZ58bYO11gUZRpwQEdE2PP7rsg"
+}

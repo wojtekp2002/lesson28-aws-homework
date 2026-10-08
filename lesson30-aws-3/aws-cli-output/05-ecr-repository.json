@@ -1,0 +1,18 @@
+﻿{
+    "repositories": [
+        {
+            "repositoryArn": "arn:aws:ecr:eu-central-1:660140202510:repository/lesson30-fargate-app",
+            "registryId": "660140202510",
+            "repositoryName": "lesson30-fargate-app",
+            "repositoryUri": "660140202510.dkr.ecr.eu-central-1.amazonaws.com/lesson30-fargate-app",
+            "createdAt": "2026-10-08T20:45:51.612000+02:00",
+            "imageTagMutability": "MUTABLE",
+            "imageScanningConfiguration": {
+                "scanOnPush": false
+            },
+            "encryptionConfiguration": {
+                "encryptionType": "AES256"
+            }
+        }
+    ]
+}

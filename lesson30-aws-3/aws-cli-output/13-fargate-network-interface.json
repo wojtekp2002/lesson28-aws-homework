@@ -1,0 +1,67 @@
+{
+    "NetworkInterfaces": [
+        {
+            "Association": {
+                "IpOwnerId": "amazon",
+                "PublicDnsName": "ec2-3-77-203-142.eu-central-1.compute.amazonaws.com",
+                "PublicIp": "3.77.203.142"
+            },
+            "Attachment": {
+                "AttachTime": "2026-10-08T18:59:23+00:00",
+                "AttachmentId": "eni-attach-008e2d9bb15d6afb4",
+                "DeleteOnTermination": false,
+                "DeviceIndex": 1,
+                "NetworkCardIndex": 0,
+                "InstanceOwnerId": "682432039653",
+                "Status": "attached"
+            },
+            "AvailabilityZone": "eu-central-1a",
+            "ConnectionTrackingConfiguration": {
+                "TcpEstablishedTimeout": 432000
+            },
+            "Description": "arn:aws:ecs:eu-central-1:660140202510:attachment/51b72e24-c641-48a0-a49f-f4fd6d7bee05",
+            "Groups": [
+                {
+                    "GroupId": "sg-0c0b209e1c95279a6",
+                    "GroupName": "lesson30-fargate-sg"
+                }
+            ],
+            "InterfaceType": "interface",
+            "Ipv6Addresses": [],
+            "MacAddress": "02:ff:ca:5b:41:ed",
+            "NetworkInterfaceId": "eni-0563181defb45cbf1",
+            "OwnerId": "660140202510",
+            "PrivateDnsName": "ip-172-31-25-21.eu-central-1.compute.internal",
+            "PublicDnsName": "ec2-3-77-203-142.eu-central-1.compute.amazonaws.com",
+            "PublicIpDnsNameOptions": {
+                "DnsHostnameType": "public-ipv4-dns-name",
+                "PublicIpv4DnsName": "ec2-3-77-203-142.eu-central-1.compute.amazonaws.com"
+            },
+            "PrivateIpAddress": "172.31.25.21",
+            "PrivateIpAddresses": [
+                {
+                    "Association": {
+                        "IpOwnerId": "amazon",
+                        "PublicDnsName": "ec2-3-77-203-142.eu-central-1.compute.amazonaws.com",
+                        "PublicIp": "3.77.203.142"
+                    },
+                    "Primary": true,
+                    "PrivateDnsName": "ip-172-31-25-21.eu-central-1.compute.internal",
+                    "PrivateIpAddress": "172.31.25.21"
+                }
+            ],
+            "RequesterId": "628676013162",
+            "RequesterManaged": true,
+            "SourceDestCheck": true,
+            "Status": "in-use",
+            "SubnetId": "subnet-0b3ffeffd359f0884",
+            "TagSet": [],
+            "VpcId": "vpc-0a3e92afe6ca287ca",
+            "Operator": {
+                "Managed": false,
+                "HiddenByDefault": false
+            },
+            "AvailabilityZoneId": "euc1-az2"
+        }
+    ]
+}

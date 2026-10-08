@@ -1,0 +1,22 @@
+﻿{
+    "AccountId":  "660140202510",
+    "CallerArn":  "arn:aws:iam::660140202510:user/devops-admin",
+    "Region":  "eu-central-1",
+    "BucketName":  "lesson30-serverless-660140202510-20261008",
+    "LambdaFunction":  "lesson30-s3-time-function",
+    "FunctionUrl":  "https://k5s7qsfpcerkyunu3n57zodlzu0xiokr.lambda-url.eu-central-1.on.aws/",
+    "EcrRepository":  "lesson30-fargate-app",
+    "EcrRepositoryUri":  "660140202510.dkr.ecr.eu-central-1.amazonaws.com/lesson30-fargate-app",
+    "CodeBuildProject":  "lesson30-ecr-image-build",
+    "CodeBuildBuildId":  "lesson30-ecr-image-build:f7998abc-00bb-43bb-83f8-06020603115f",
+    "CodeBuildStatus":  "SUCCEEDED",
+    "EcsCluster":  "lesson30-fargate-cluster",
+    "TaskDefinition":  "arn:aws:ecs:eu-central-1:660140202510:task-definition/lesson30-fargate-task:1",
+    "TaskArn":  "arn:aws:ecs:eu-central-1:660140202510:task/lesson30-fargate-cluster/17ce392c6cee4116a34177b6a548a5b9",
+    "VpcId":  "vpc-0a3e92afe6ca287ca",
+    "Subnets":  [
+                    "subnet-0b3ffeffd359f0884",
+                    "subnet-0436e3d7d43efcc43"
+                ],
+    "SecurityGroupId":  "sg-0c0b209e1c95279a6"
+}

@@ -3,3 +3,5 @@
 *.key
 credentials
 config
+.build/
+**/.build/

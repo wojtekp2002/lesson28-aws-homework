@@ -1,0 +1,9 @@
+﻿{
+    "current_time_utc":  "2026-10-08T18:57:57.590748+00:00",
+    "bucket":  "lesson30-serverless-660140202510-20261008",
+    "files":  [
+                  "codebuild/source.zip",
+                  "input/sample-a.txt",
+                  "input/sample-b.txt"
+              ]
+}

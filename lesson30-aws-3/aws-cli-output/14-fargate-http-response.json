@@ -1,0 +1,8 @@
+{
+  "status": "ok",
+  "lesson": "30",
+  "service": "ECS Fargate",
+  "message": "Wlasny obraz Docker uruchomiony jako task ECS Fargate.",
+  "hostname": "ip-172-31-25-21.eu-central-1.compute.internal",
+  "time": "2026-10-08T19:00:53.72Z"
+}

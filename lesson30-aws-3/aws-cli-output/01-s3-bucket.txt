@@ -1,0 +1,39 @@
+﻿{
+    "Contents": [
+        {
+            "Key": "codebuild/source.zip",
+            "LastModified": "2026-10-08T18:55:54+00:00",
+            "ETag": "\"dea51c1871348732720fb1ad141fb142\"",
+            "ChecksumAlgorithm": [
+                "CRC64NVME"
+            ],
+            "ChecksumType": "FULL_OBJECT",
+            "Size": 1213,
+            "StorageClass": "STANDARD"
+        },
+        {
+            "Key": "input/sample-a.txt",
+            "LastModified": "2026-10-08T18:57:21+00:00",
+            "ETag": "\"f19f307ff572a21cc79df9bb80ddf2ee\"",
+            "ChecksumAlgorithm": [
+                "CRC64NVME"
+            ],
+            "ChecksumType": "FULL_OBJECT",
+            "Size": 31,
+            "StorageClass": "STANDARD"
+        },
+        {
+            "Key": "input/sample-b.txt",
+            "LastModified": "2026-10-08T18:57:22+00:00",
+            "ETag": "\"b1d9c8cc86bffa0e935f539989f168e4\"",
+            "ChecksumAlgorithm": [
+                "CRC64NVME"
+            ],
+            "ChecksumType": "FULL_OBJECT",
+            "Size": 37,
+            "StorageClass": "STANDARD"
+        }
+    ],
+    "RequestCharged": null,
+    "Prefix": ""
+}

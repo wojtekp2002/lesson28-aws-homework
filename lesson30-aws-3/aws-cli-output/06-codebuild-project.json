@@ -1,0 +1,47 @@
+﻿{
+    "project": {
+        "name": "lesson30-ecr-image-build",
+        "arn": "arn:aws:codebuild:eu-central-1:660140202510:project/lesson30-ecr-image-build",
+        "source": {
+            "type": "S3",
+            "location": "lesson30-serverless-660140202510-20261008/codebuild/source.zip",
+            "insecureSsl": false
+        },
+        "artifacts": {
+            "type": "NO_ARTIFACTS"
+        },
+        "cache": {
+            "type": "NO_CACHE"
+        },
+        "environment": {
+            "type": "LINUX_CONTAINER",
+            "image": "aws/codebuild/standard:7.0",
+            "computeType": "BUILD_GENERAL1_SMALL",
+            "environmentVariables": [
+                {
+                    "name": "REPOSITORY_URI",
+                    "value": "660140202510.dkr.ecr.eu-central-1.amazonaws.com/lesson30-fargate-app",
+                    "type": "PLAINTEXT"
+                },
+                {
+                    "name": "AWS_DEFAULT_REGION",
+                    "value": "eu-central-1",
+                    "type": "PLAINTEXT"
+                }
+            ],
+            "privilegedMode": true,
+            "imagePullCredentialsType": "CODEBUILD"
+        },
+        "serviceRole": "arn:aws:iam::660140202510:role/lesson30-codebuild-role",
+        "timeoutInMinutes": 60,
+        "queuedTimeoutInMinutes": 480,
+        "encryptionKey": "arn:aws:kms:eu-central-1:660140202510:alias/aws/s3",
+        "tags": [],
+        "created": "2026-10-08T20:47:48.960000+02:00",
+        "lastModified": "2026-10-08T20:55:57.751000+02:00",
+        "badge": {
+            "badgeEnabled": false
+        },
+        "projectVisibility": "PRIVATE"
+    }
+}

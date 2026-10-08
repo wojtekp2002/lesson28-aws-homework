@@ -1,0 +1,21 @@
+﻿{
+    "cluster": {
+        "clusterArn": "arn:aws:ecs:eu-central-1:660140202510:cluster/lesson30-fargate-cluster",
+        "clusterName": "lesson30-fargate-cluster",
+        "status": "ACTIVE",
+        "registeredContainerInstancesCount": 0,
+        "runningTasksCount": 0,
+        "pendingTasksCount": 0,
+        "activeServicesCount": 0,
+        "statistics": [],
+        "tags": [],
+        "settings": [
+            {
+                "name": "containerInsights",
+                "value": "disabled"
+            }
+        ],
+        "capacityProviders": [],
+        "defaultCapacityProviderStrategy": []
+    }
+}

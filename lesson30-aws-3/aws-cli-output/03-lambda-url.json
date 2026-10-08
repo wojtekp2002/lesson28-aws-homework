@@ -1,0 +1,8 @@
+﻿{
+    "FunctionUrl": "https://k5s7qsfpcerkyunu3n57zodlzu0xiokr.lambda-url.eu-central-1.on.aws/",
+    "FunctionArn": "arn:aws:lambda:eu-central-1:660140202510:function:lesson30-s3-time-function",
+    "AuthType": "NONE",
+    "CreationTime": "2026-10-08T18:42:49.772582815Z",
+    "LastModifiedTime": "2026-10-08T18:42:49.772582815Z",
+    "InvokeMode": "BUFFERED"
+}

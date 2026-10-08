@@ -1,0 +1,49 @@
+﻿{
+    "Configuration": {
+        "FunctionName": "lesson30-s3-time-function",
+        "FunctionArn": "arn:aws:lambda:eu-central-1:660140202510:function:lesson30-s3-time-function",
+        "Runtime": "python3.12",
+        "Role": "arn:aws:iam::660140202510:role/lesson30-lambda-role",
+        "Handler": "lambda_function.lambda_handler",
+        "CodeSize": 487,
+        "Description": "",
+        "Timeout": 3,
+        "MemorySize": 128,
+        "LastModified": "2026-10-08T18:57:45.000+0000",
+        "CodeSha256": "8ECTc5D6beOD+9kmVDukI4K6T3H53h41uBrDI3f3fnM=",
+        "Version": "$LATEST",
+        "Environment": {
+            "Variables": {
+                "BUCKET_NAME": "lesson30-serverless-660140202510-20261008"
+            }
+        },
+        "TracingConfig": {
+            "Mode": "PassThrough"
+        },
+        "RevisionId": "d52f86c7-c798-4973-8d98-bd16d984079b",
+        "State": "Active",
+        "LastUpdateStatus": "Successful",
+        "PackageType": "Zip",
+        "Architectures": [
+            "x86_64"
+        ],
+        "EphemeralStorage": {
+            "Size": 512
+        },
+        "SnapStart": {
+            "ApplyOn": "None",
+            "OptimizationStatus": "Off"
+        },
+        "RuntimeVersionConfig": {
+            "RuntimeVersionArn": "arn:aws:lambda:eu-central-1::runtime:36aeb19f3326e129d9f096dea0a3c6a9ca8dce2610e62d2b2060747602d863ae"
+        },
+        "LoggingConfig": {
+            "LogFormat": "Text",
+            "LogGroup": "/aws/lambda/lesson30-s3-time-function"
+        }
+    },
+    "Code": {
+        "RepositoryType": "S3",
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/660140202510/lesson30-s3-time-function-4bf5673b-83bc-40c3-b13f-d6139e5e285f?versionId=kJWvhJ4_dp8Pjro4bZCcH9Ry5ewqNugw&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGIaDGV1LWNlbnRyYWwtMSJHMEUCIQCVlo4EUtC5PeLZRc4vZOSkkb3ge9yYn4AhJreTkEExQAIgYT9ZBBrL1v7tvw8RGwJCcXOUibBOF96gLUrf%2F8uzC58qiwIIKhADGgw2ODA2ODY1NTk0MzQiDCbKYY1rb9ospB1AKiroAeZxU0oYwYqyziecS2vrjcde0AHHTgpdy5DoWAGwLIDkeUpRmjJtzmSI46GEL9kRm66VkZ9A5ZUJE3Lf%2F5NbVWe1mfYEC6oxNuvu822oG0wCt3IR6h5hm%2F1yUH1Hn67MGOjjLk5Bosd6SfCPe4ttpHA3OuyLXfVwTC9cHU6XjU%2BKBlVarmmtAyNFGBYoKapNpj8PB6l86yCKBsI6sqWLPDI4Bto3q65sVtpIMjrSF4Sd2VWRdRwd7S71BLT14yn2CRBML4AbraqWAdFD7aKwvVPmHdN%2FNzQ%2FQdA0wai0q4vp2iaMPHR4vkowurGf1gY6jQF5nQv3o514uioDWVLgjY9CFlYOSmszHOEP0jqYG5FWWN%2FAVn%2FRmtjKkYX%2F1FTC%2BWEGfMTSMbRLspC7twKBZaNElnReWNMPchV6YJYGklJpsAIvKXTPg3uPm7JLXZC2BkVipLk8jN8uEBb75jNBd4ieKuJg8SGMpZa5SwRryLpOnlF5A04o%2FwGiNnf8UYs%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261008T185750Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFHSVUXMWK%2F20261008%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=2dc7bff5bf400c7f7189d736a452e99487f7dacff2f00a608bb321d937fbd0d3"
+    }
+}
