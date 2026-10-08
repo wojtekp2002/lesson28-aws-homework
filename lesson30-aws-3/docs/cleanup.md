@@ -1,15 +1,11 @@
 # Cleanup
 
-Po zaliczeniu zadania usuń zasoby, bo ECS Fargate, ECR, Lambda i S3 mogą generować koszty albo zostawiać aktywne usługi.
-
 ## ECS Fargate
 
 ```powershell
 aws ecs stop-task --region eu-central-1 --cluster lesson30-fargate-cluster --task <TASK_ARN>
 aws ecs delete-cluster --region eu-central-1 --cluster lesson30-fargate-cluster
 ```
-
-Task z weryfikacji został już zatrzymany, ale klaster i task definition mogą dalej istnieć jako dowód.
 
 ## CodeBuild
 
