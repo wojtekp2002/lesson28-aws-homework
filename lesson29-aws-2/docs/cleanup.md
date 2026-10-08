@@ -1,7 +1,5 @@
 # Cleanup
 
-Po zaliczeniu zadania usuń zasoby, bo EC2 i RDS mogą generować koszty.
-
 ## S3
 
 ```powershell
