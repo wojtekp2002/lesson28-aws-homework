@@ -44,6 +44,6 @@
     },
     "Code": {
         "RepositoryType": "S3",
-        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/660140202510/lesson30-s3-time-function-4bf5673b-83bc-40c3-b13f-d6139e5e285f?versionId=kJWvhJ4_dp8Pjro4bZCcH9Ry5ewqNugw&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGIaDGV1LWNlbnRyYWwtMSJHMEUCIQCVlo4EUtC5PeLZRc4vZOSkkb3ge9yYn4AhJreTkEExQAIgYT9ZBBrL1v7tvw8RGwJCcXOUibBOF96gLUrf%2F8uzC58qiwIIKhADGgw2ODA2ODY1NTk0MzQiDCbKYY1rb9ospB1AKiroAeZxU0oYwYqyziecS2vrjcde0AHHTgpdy5DoWAGwLIDkeUpRmjJtzmSI46GEL9kRm66VkZ9A5ZUJE3Lf%2F5NbVWe1mfYEC6oxNuvu822oG0wCt3IR6h5hm%2F1yUH1Hn67MGOjjLk5Bosd6SfCPe4ttpHA3OuyLXfVwTC9cHU6XjU%2BKBlVarmmtAyNFGBYoKapNpj8PB6l86yCKBsI6sqWLPDI4Bto3q65sVtpIMjrSF4Sd2VWRdRwd7S71BLT14yn2CRBML4AbraqWAdFD7aKwvVPmHdN%2FNzQ%2FQdA0wai0q4vp2iaMPHR4vkowurGf1gY6jQF5nQv3o514uioDWVLgjY9CFlYOSmszHOEP0jqYG5FWWN%2FAVn%2FRmtjKkYX%2F1FTC%2BWEGfMTSMbRLspC7twKBZaNElnReWNMPchV6YJYGklJpsAIvKXTPg3uPm7JLXZC2BkVipLk8jN8uEBb75jNBd4ieKuJg8SGMpZa5SwRryLpOnlF5A04o%2FwGiNnf8UYs%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261008T185750Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIAZ47AUUDFHSVUXMWK%2F20261008%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Signature=2dc7bff5bf400c7f7189d736a452e99487f7dacff2f00a608bb321d937fbd0d3"
+        "Location": "https://awslambda-eu-cent-1-tasks.s3.eu-central-1.amazonaws.com/snapshots/660140202510/lesson30-s3-time-function-4bf56..."
     }
 }
